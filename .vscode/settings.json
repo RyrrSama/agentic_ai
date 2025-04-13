@@ -1,0 +1,11 @@
+{
+    "python-envs.pythonProjects": [],
+    "ruff.lint.enable": true,
+    "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.formatOnSave": true // Trigger formatting on file save
+    },
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit"
+    }
+}

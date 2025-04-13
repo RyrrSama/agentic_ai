@@ -1,0 +1,24 @@
+[tool.ruff]
+# Specify the line length for formatting
+line-length = 88
+
+# Enable autofix for linting issues
+fix = true
+
+# Exclude specific files or directories
+exclude = [
+    ".venv",
+    "build",
+    "dist"
+]
+
+# Select specific linting rules or categories
+select = ["E", "F", "W", "C90"]
+
+# Ignore specific rules
+ignore = ["E501"]  # Example: Ignore line length errors
+
+# Add additional configuration for imports
+[tool.ruff.isort]
+known_third_party = ["litellm"]
+sections = ["FUTURE", "STDLIB", "THIRDPARTY", "FIRSTPARTY", "LOCALFOLDER"]
