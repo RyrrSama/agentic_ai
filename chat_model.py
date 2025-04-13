@@ -54,7 +54,7 @@ class ChatModel:
         self.__time_out = CONSTANTS.TIMEOUT
         self.__base_url = CONSTANTS.API_BASE_URL
         self.__tool_mapper, tools = utils.get_tools_definition()
-        self.__tools.append(tools)
+        self.__tools.extend(tools)
 
     def __excute_action(self, response):
         """Executes the tool passed in and returns its result.
@@ -244,7 +244,7 @@ class ChatModel:
         # self.__append_assistant_response(segment)
 
         # Run tool
-        self.__excute_action(response)
+        # self.__excute_action(response)
 
         return content
 
